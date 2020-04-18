@@ -1,5 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!--Part-1-->
+<!--<div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -16,5 +17,13 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul>-->
+<!--Part-2-->
+<!--<app-orbit-list></app-orbit-list>-->
+<!--Part-3-->
+<app-orbit-list [satellites] = "displayList"></app-orbit-list>
+<div class="search-form">
+  <input #searchTerm (keyup.enter) = "search(searchTerm.value)" type="text" placeholder="Searh Word"/>
+  <button (click) = "search(searchTerm.value)">Search</button>
+</div>
 
